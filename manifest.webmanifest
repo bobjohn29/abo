@@ -1,0 +1,18 @@
+{
+  "name": "KAL Familien-News",
+  "short_name": "KAL",
+  "description": "Eine Familien-News-Startseite, die auf dem Handy installiert werden kann.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f1e8",
+  "theme_color": "#d6111d",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

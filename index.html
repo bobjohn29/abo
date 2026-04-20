@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#d6111d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="KAL" />
+    <title>KAL | Familien-News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="utility-bar">
+      <div class="utility-bar__inner">
+        <span>KAL LIVE</span>
+        <span>Montag, 20.04.2026</span>
+        <span>Berlin / Familienredaktion</span>
+        <span id="account-status">Account nicht eingerichtet</span>
+        <span>Exklusiv nur für euch</span>
+      </div>
+    </div>
+
+    <div class="breaking-bar">
+      <p>Live für die Familie: Geburtstage, Schule, Chaos im Haus und die wichtigsten Familien-Schlagzeilen.</p>
+    </div>
+
+    <header class="site-header">
+      <div class="brand-lockup">
+        <a class="brand" href="/" aria-label="KAL Startseite">KAL</a>
+        <div class="brand-copy">
+          <p class="eyebrow">Familien-Ausgabe</p>
+          <p class="subline">Der lauteste Ort für eure Haus-Nachrichten.</p>
+        </div>
+      </div>
+
+      <nav class="top-nav" aria-label="Hauptnavigation">
+        <a href="#top-story">Top-Story</a>
+        <a href="#today">Heute</a>
+        <a href="#photos">Highlights</a>
+        <a href="#calendar">Kalender</a>
+        <a href="#scoreboard">Punktestand</a>
+      </nav>
+    </header>
+
+    <section class="masthead-stage">
+      <div class="masthead-stage__inner">
+        <div class="masthead-stage__headline">
+          <p class="masthead-stage__kicker">Familien-Boulevard</p>
+          <h1>KAL</h1>
+          <p>Schlagzeilen, Zoff, Technik, Schule und die komplette Lage im Haus auf einen Blick.</p>
+        </div>
+        <div class="masthead-stage__stats">
+          <div class="stat-chip">
+            <strong>10</strong>
+            <span>Top-Themen</span>
+          </div>
+          <div class="stat-chip">
+            <strong>LIVE</strong>
+            <span>Heute aktualisiert</span>
+          </div>
+          <div class="stat-chip">
+            <strong>KAL</strong>
+            <span>Private Familienausgabe</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="page-shell">
+      <section class="alert-ticker" aria-label="Breaking News">
+        <div class="alert-ticker__track">
+          <span>BREAKING NEWS: LUKAS MUSS ERST AM FREITAG FRANZÖSISCH NACHSCHREIBEN.</span>
+          <span>BREAKING NEWS: LUKAS MUSS ERST AM FREITAG FRANZÖSISCH NACHSCHREIBEN.</span>
+          <span>BREAKING NEWS: LUKAS MUSS ERST AM FREITAG FRANZÖSISCH NACHSCHREIBEN.</span>
+        </div>
+      </section>
+
+      <section class="live-ribbon">
+        <button class="live-pill report-card" data-report-id="schule-start" type="button">Schulstart-Alarm</button>
+        <button class="live-pill report-card" data-report-id="franzoesisch" type="button">Französisch-Drama</button>
+        <button class="live-pill report-card" data-report-id="iphone" type="button">iPhone-Entscheidung</button>
+        <button class="live-pill report-card" data-report-id="kriegsgebiet" type="button">Haus-Lage eskaliert</button>
+        <button class="live-pill report-card" data-report-id="m-niveau" type="button">M-Niveau-Hoffnung</button>
+      </section>
+
+      <section class="hero-grid" id="top-story">
+        <article class="hero-story report-card" data-report-id="schule-start" tabindex="0" role="button">
+          <div class="report-thumb report-thumb--xl report-thumb--schule">
+            <span class="report-thumb__badge">Schulstart</span>
+            <span class="report-thumb__caption">Live-Bild aus der morgendlichen Einsatzlage</span>
+          </div>
+          <div class="hero-story__content">
+            <span class="tag tag-alert">Schule</span>
+            <p class="kicker">Heute im Fokus</p>
+            <h1>Für Lukas fängt heute die Schule wieder an!</h1>
+            <p class="lead">
+              Neue Woche sowie neues Chaos beginnt. Die Familienredaktion beobachtet die Lage mit großer Spannung.
+            </p>
+            <div class="hero-meta">
+              <span>Aktualisiert 08:19</span>
+              <span>Von der KAL-Familienredaktion</span>
+            </div>
+          </div>
+        </article>
+
+        <aside class="side-stack">
+          <article class="mini-card highlight report-card" data-report-id="franzoesisch" tabindex="0" role="button">
+            <div class="report-thumb report-thumb--md report-thumb--franzoesisch">
+              <span class="report-thumb__badge">Prüfungsdrama</span>
+            </div>
+            <div class="mini-card__content">
+              <span class="tag">Schule</span>
+              <h2>LUKAS SCHREIBT MORGEN VIELLEICHT FRANZÖSISCH NACH OHNE ZU LERNEN</h2>
+              <p>Die Chancen stehen mutig, die Vorbereitung eher weniger.</p>
+            </div>
+          </article>
+
+          <article class="mini-card report-card" data-report-id="iphone" tabindex="0" role="button">
+            <div class="report-thumb report-thumb--md report-thumb--iphone">
+              <span class="report-thumb__badge">Technik</span>
+            </div>
+            <div class="mini-card__content">
+              <span class="tag">Technik</span>
+              <h2>Papa bekommt das iPhone 17 Pro Max</h2>
+              <p>Diskussionen über Notwendigkeit wurden bereits ignoriert.</p>
+            </div>
+          </article>
+        </aside>
+      </section>
+
+      <section class="quick-stage">
+        <article class="quick-stage__lead report-card" data-report-id="kal-release" tabindex="0" role="button">
+          <div class="report-thumb report-thumb--md report-thumb--kal-release">
+            <span class="report-thumb__badge">Digital</span>
+          </div>
+          <div class="quick-stage__content">
+            <p class="quick-stage__eyebrow">Neu online</p>
+            <h2>Die KAL-Seite ist jetzt das digitale Zentrum für alle Familien-Schlagzeilen.</h2>
+          </div>
+        </article>
+        <div class="quick-stage__rail">
+          <article class="quick-stage__item report-card" data-report-id="tischregeln" tabindex="0" role="button">
+            <p class="quick-stage__label">Live</p>
+            <h3>Tischregeln bleiben das Dauer-Thema beim Essen.</h3>
+          </article>
+          <article class="quick-stage__item report-card" data-report-id="chaos-woche" tabindex="0" role="button">
+            <p class="quick-stage__label">Wochenstart</p>
+            <h3>Montag setzt sofort den Ton für mehr Chaos.</h3>
+          </article>
+          <article class="quick-stage__item report-card" data-report-id="lea-ipad" tabindex="0" role="button">
+            <p class="quick-stage__label">Verdacht</p>
+            <h3>Das iPad-Rätsel um Lea bleibt weiter offen.</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="ticker-section" id="today">
+        <div class="section-title">
+          <span>Heute</span>
+          <h2>Schnelle Schlagzeilen aus dem ganzen Haus</h2>
+        </div>
+
+        <div class="ticker-grid">
+          <article class="ticker-card report-card" data-report-id="kriegsgebiet" tabindex="0" role="button">
+            <div class="report-thumb report-thumb--sm report-thumb--kriegsgebiet"></div>
+            <div class="ticker-card__content">
+              <p class="ticker-time">07:05</p>
+              <h3>Haus sieht aus wie im KRIEGSGEBIET</h3>
+            </div>
+          </article>
+          <article class="ticker-card report-card" data-report-id="tischregeln" tabindex="0" role="button">
+            <div class="report-thumb report-thumb--sm report-thumb--tischregeln"></div>
+            <div class="ticker-card__content">
+              <p class="ticker-time">10:20</p>
+              <h3>Fängt Lukas an Regeln am Tisch zu befolgen?</h3>
+            </div>
+          </article>
+          <article class="ticker-card report-card" data-report-id="kal-release" tabindex="0" role="button">
+            <div class="report-thumb report-thumb--sm report-thumb--kal-release"></div>
+            <div class="ticker-card__content">
+              <p class="ticker-time">12:45</p>
+              <h3>Release der KAL Seite.</h3>
+            </div>
+          </article>
+          <article class="ticker-card report-card" data-report-id="chaos-woche" tabindex="0" role="button">
+            <div class="report-thumb report-thumb--sm report-thumb--chaos-woche"></div>
+            <div class="ticker-card__content">
+              <p class="ticker-time">14:00</p>
+              <h3>Neue Woche sowie Neues Chaos beginnt</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <section class="story-column" id="photos">
+          <div class="section-title">
+            <span>Im Fokus</span>
+            <h2>Die großen Familiengeschichten</h2>
+          </div>
+
+          <article class="story-panel story-panel-feature report-card" data-report-id="familientreffen" tabindex="0" role="button">
+            <div class="report-thumb report-thumb--lg report-thumb--familientreffen">
+              <span class="report-thumb__badge">Familientreffen</span>
+            </div>
+            <div class="story-panel__content">
+              <span class="tag tag-dark">Familie</span>
+              <h3>Familientreffen war LANGWEILIG?</h3>
+              <p>
+                Interne Stimmen berichten von zu wenig Spannung und zu vielen langweiligen Gesprächsrunden.
+              </p>
+            </div>
+          </article>
+
+          <article class="story-panel report-card" data-report-id="lea-ipad" tabindex="0" role="button">
+            <div class="report-thumb report-thumb--lg report-thumb--lea-ipad">
+              <span class="report-thumb__badge">Verdacht</span>
+            </div>
+            <div class="story-panel__content">
+              <span class="tag">Verdacht</span>
+              <h3>Versteckt Lea ein weiteres iPad?</h3>
+              <p>Die Ermittlungen laufen. Erste Hinweise sind verdächtig eindeutig.</p>
+            </div>
+          </article>
+
+          <article class="story-panel report-card" data-report-id="m-niveau" tabindex="0" role="button">
+            <div class="report-thumb report-thumb--lg report-thumb--m-niveau">
+              <span class="report-thumb__badge">Bildung</span>
+            </div>
+            <div class="story-panel__content">
+              <span class="tag">Schule</span>
+              <h3>Schafft Lea es doch ins M-Niveau?</h3>
+              <p>Die Familie diskutiert bereits über mögliche Feierlichkeiten.</p>
+            </div>
+          </article>
+        </section>
+
+        <aside class="sidebar">
+          <section class="sidebar-panel sidebar-panel--dark">
+            <div class="section-title compact">
+              <span>Meistgelesen</span>
+              <h2>Die großen Aufreger</h2>
+            </div>
+            <div class="ranking-list">
+              <button class="ranking-item report-card" data-report-id="franzoesisch" type="button">
+                <strong>01</strong>
+                <span>Lukas und das Französisch-Risiko</span>
+              </button>
+              <button class="ranking-item report-card" data-report-id="kriegsgebiet" type="button">
+                <strong>02</strong>
+                <span>Haus-Lage weiter komplett unklar</span>
+              </button>
+              <button class="ranking-item report-card" data-report-id="iphone" type="button">
+                <strong>03</strong>
+                <span>iPhone-Entscheidung sorgt für Reaktionen</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="sidebar-panel" id="calendar">
+            <div class="section-title compact">
+              <span>Kommende Termine</span>
+              <h2>Nichts vorgesehen</h2>
+            </div>
+            <ul class="agenda">
+              <li>
+                <strong>--</strong>
+                <span>Aktuell sind keine Pläne vorgesehen</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="sidebar-panel" id="scoreboard">
+            <div class="section-title compact">
+              <span>Punktestand</span>
+              <h2>Nichts vorgegeben</h2>
+            </div>
+            <div class="score-list">
+              <div class="score-item">
+                <span>Diese Woche</span>
+                <strong>Noch keine Aufgaben</strong>
+              </div>
+            </div>
+          </section>
+
+          <section class="sidebar-panel poll-panel">
+            <div class="section-title compact">
+              <span>Abstimmung</span>
+              <h2>Chancen das Lukas heute Französisch nachschreibt?</h2>
+            </div>
+            <form id="family-poll">
+              <label><input type="radio" name="vote" value="Ja" /> Ja</label>
+              <label><input type="radio" name="vote" value="Nein" /> Nein</label>
+              <button type="submit">Stimme abgeben</button>
+            </form>
+            <p class="poll-result" id="poll-result" aria-live="polite"></p>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>KAL Familien-News</p>
+      <p>Private Familien-News für den Alltag.</p>
+    </footer>
+
+    <div class="account-gate" id="account-gate" aria-hidden="true">
+      <div class="account-gate__backdrop"></div>
+      <section class="account-gate__panel" role="dialog" aria-modal="true" aria-labelledby="account-gate-title">
+        <p class="account-gate__eyebrow">KAL Zugang</p>
+        <h2 class="account-gate__title" id="account-gate-title">Account Erstellen</h2>
+        <p class="account-gate__copy">
+          Bevor du die Familien-News lesen kannst, richte einmal deinen KAL-Account ein. Das passiert nur beim ersten
+          Besuch auf diesem Gerät.
+        </p>
+
+        <form class="account-gate__form" id="account-form">
+          <label class="account-field">
+            <span>Benutzername</span>
+            <input id="account-username" name="username" type="text" maxlength="24" autocomplete="nickname" placeholder="z. B. Lukas" />
+          </label>
+
+          <fieldset class="account-fieldset">
+            <legend>Geschlecht</legend>
+            <label class="account-choice">
+              <input type="radio" name="gender" value="M&auml;nnlich" />
+              <span>M&auml;nnlich</span>
+            </label>
+            <label class="account-choice">
+              <input type="radio" name="gender" value="Weiblich" />
+              <span>Weiblich</span>
+            </label>
+          </fieldset>
+
+          <p class="account-gate__error" id="account-error" aria-live="polite"></p>
+          <button class="account-gate__submit" type="submit">Account speichern</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="report-modal" id="report-modal" aria-hidden="true">
+      <div class="report-modal__backdrop" data-close-modal></div>
+      <article class="report-modal__panel" role="dialog" aria-modal="true" aria-labelledby="report-modal-title">
+        <button class="report-modal__close" type="button" aria-label="Artikel schlie&szlig;en" data-close-modal>X</button>
+        <div class="report-modal__headerline">KAL EXKLUSIV</div>
+        <p class="report-modal__eyebrow" id="report-modal-kicker"></p>
+        <h2 class="report-modal__title" id="report-modal-title"></h2>
+        <p class="report-modal__subtitle" id="report-modal-subtitle"></p>
+        <div class="report-modal__hero" id="report-modal-visual">
+          <span class="report-modal__visual-label" id="report-modal-visual-label"></span>
+        </div>
+        <div class="report-modal__meta">
+          <span class="report-modal__author">KAL Familienredaktion</span>
+          <span id="report-modal-location"></span>
+          <span id="report-modal-time"></span>
+        </div>
+        <div class="report-modal__body" id="report-modal-body"></div>
+        <section class="comments-panel">
+          <div class="comments-panel__header">
+            <p class="comments-panel__eyebrow">KAL Kommentare</p>
+            <h3 class="comments-panel__title">Meinungen zur Schlagzeile</h3>
+          </div>
+
+          <form class="comment-form" id="comment-form">
+            <label class="comment-form__field">
+              <span>Dein Kommentar</span>
+              <textarea
+                id="comment-input"
+                name="comment"
+                rows="4"
+                maxlength="280"
+                placeholder="Schreib deine Meinung zur Story ..."
+              ></textarea>
+            </label>
+            <p class="comment-form__error" id="comment-error" aria-live="polite"></p>
+            <button class="comment-form__submit" type="submit">Kommentar posten</button>
+          </form>
+
+          <div class="comments-list" id="comments-list"></div>
+        </section>
+      </article>
+    </div>
+
+    <script src="./script.js?v=2"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./sw.js");
+        });
+      }
+    </script>
+  </body>
+</html>
